@@ -1,0 +1,29 @@
+.contanier{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 90vh;
+background-color: rgb(238, 244, 244);
+}
+.form{
+box-shadow: 0px 0px 5px 1px grey;
+
+  border: 1px none;
+  border-radius: 5px;
+  height: 320px;
+  width: 350px;
+  align-content: center;
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+}
+
+
+.login-btn{
+margin-left: 0px;
+}
+
+
+.link-but{
+  text-decoration: none;
+}
