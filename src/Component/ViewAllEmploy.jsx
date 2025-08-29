@@ -33,7 +33,7 @@ const ViewAllEmp = () => {
   }
 
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:2353/api/emp/delete/${id}`)
+    await axios.delete(`https://employee-rpbq.onrender.com/api/emp/delete/${id}`)
     getData()
   }
 
@@ -52,7 +52,7 @@ const ViewAllEmp = () => {
 
   const handleUpdateSubmit = async (e) => {
     e.preventDefault()
-    await axios.put(`http://localhost:2353/api/emp/update/${editId}`, formData)
+    await axios.put(`https://employee-rpbq.onrender.com/api/emp/update/${editId}`, formData)
     getData()
     setFormVisible(false) // form hide karna
     setEditId(null)
