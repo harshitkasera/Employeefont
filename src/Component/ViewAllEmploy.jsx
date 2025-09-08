@@ -75,7 +75,7 @@ const ViewAllEmp = () => {
           </tr>
         </thead>
         <tbody>
-          {emp.map((item) => (
+          {emp.map((item) => ( 
             <tr key={item._id}>
               <td>{item.name}</td>
               <td>{item.age}</td>

@@ -1,28 +1,45 @@
 
+// import React from 'react'
+// import "./Style/Main-nav.css"
+
+// import { Link} from 'react-router-dom'
+// const Navbar = () => {
+//   return (
+//     <div>
+//       <nav className="navbar">
+//   <div className="container-fluid">
+//     <a className="navbar-brand" href="#">Navbar</a>
+  
+   
+//     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+//       <div className="navbar-nav">
+       
+   
+//         <Link className="nav-link" to="/signup">Signup</Link>
+//         <Link className="nav-link" to="/login">Login</Link>
+     
+//       </div>
+//     </div>
+//   </div>
+// </nav>
+//     </div>
+//   )
+// }
+
+// export default Navbar
+
 import React from 'react'
 import "./Style/Main-nav.css"
-
 import { Link} from 'react-router-dom'
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-       
-   
-        <Link class="nav-link" to="/signup">Signup</Link>
-        <Link class="nav-link" to="/login">Login</Link>
-     
-      </div>
-    </div>
-  </div>
-</nav>
+    <div className='nav'>
+      
+       <a className="navbar-brand" href="#">Unity</a>
+       <div className='link'>
+       <Link className="nav-link" to="/signup">Signup</Link>
+       <Link className="nav-link" to="/login">Login</Link>
+       </div>
     </div>
   )
 }
