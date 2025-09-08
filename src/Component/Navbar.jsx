@@ -6,11 +6,15 @@ import { Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='nav'>
-      
-       <a className="navbar-brand" href="#">Unity</a>
+      <img src='./images/logo.png'></img>
+       <a className="navbar-brand" href="/">Unity</a>
        <div className='link'>
-       <Link className="nav-link" to="/signup">Signup</Link>
-       <Link className="nav-link" to="/login">Login</Link>
+        <div>
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+       <Link className="nav-link" to="/signup">Signup</Link></div>
+       <div>
+       <i class="fa fa-sign-in" aria-hidden="true"></i>
+       <Link className="nav-link" to="/login">Login</Link></div>
        </div>
     </div>
   )

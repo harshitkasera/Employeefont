@@ -16,11 +16,12 @@ export default function MainNavBar() {
     <div className='nav'>
 
 
+      <img src='./images/logo.png'></img>
       <a class="navbar-brand" href="#">Unity</a>
 
       <div class="link">
-        <Link class="nav-link" to="/addemp">AddEmp</Link>
-        <Link class="nav-link" to="/view">View-All-Employ</Link>
+        <Link class="nav-link" to="/addemp">Add</Link>
+        <Link class="nav-link" to="/view">All-Emp</Link>
         <button className='logout-btn' onClick={handleout}>LogOut</button>
       </div>
     </div>
