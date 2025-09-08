@@ -82,8 +82,8 @@ const ViewAllEmp = () => {
               <td>{item.mobile}</td>
               <td>{item.city}</td>
               <td>{item.salary}</td>
-              <td><button onClick={() => handleUpdateClick(item)}>Update</button></td>
-              <td><button onClick={() => handleDelete(item._id)}>Delete</button></td>
+              <td><button className='btnf' onClick={() => handleUpdateClick(item)}>Update</button></td>
+              <td><button className='btns' onClick={() => handleDelete(item._id)}>Delete</button></td>
             </tr>
           ))}
         </tbody>

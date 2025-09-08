@@ -8,7 +8,7 @@ table {
   width: 95%;
   margin: 0 auto;
   border-collapse: collapse;
-  background: white;
+  background: rgba(240, 237, 237, 0.806);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 8px;
   overflow: hidden;
@@ -16,13 +16,13 @@ table {
 
 thead {
   background: #007bff;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 th, td {
   padding: 12px;
   text-align: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ac9a9a;
 }
 
 button {
@@ -37,13 +37,13 @@ button:hover {
   opacity: 0.9;
 }
 
-button:nth-child(1) {
+.btnf {
   background: #28a745;
   color: white;
 }
 
-button:nth-child(2) {
-  background: #dc3545;
+.btns{
+  background: #cd3242;
   color: white;
 }
 
