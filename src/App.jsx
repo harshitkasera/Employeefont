@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Navbar from "./Component/Navbar";
 import Signup from "./Component/Signup";
@@ -12,11 +10,13 @@ import MainNavBar from "./Component/Main-nav";
 import EmployeeForm from "./Component/Empform";
 import ViewAllEmp from "./Component/ViewAllEmploy";
 function AppContaint() {
-  const { isLoggedIn } = useAuth();
-
+  const { isLoggedIn, loading } = useAuth();
+  if(loading){
+    return <div style={{textAlign:"center", marginTop:"50px"}}>Loading...</div>;
+  }
   return (
     <div>
-      {isLoggedIn ? <MainNavBar /> : <Navbar />}
+      {isLoggedIn ? <MainNavBar/> : <Navbar/>}
       {/* <Navbar/> */}
       <Routes>
         {isLoggedIn ? (
@@ -25,8 +25,8 @@ function AppContaint() {
         ) : (
           <Route path="/" element={<Home />}></Route>
         )}
-        <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
         <Route path="/addemp" element={<EmployeeForm />}></Route>
         <Route path="/view" element={<ViewAllEmp />}></Route>
       </Routes>
